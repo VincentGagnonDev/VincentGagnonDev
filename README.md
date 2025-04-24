@@ -1,16 +1,28 @@
-## Hi there 👋
+public internal class Vincent {
 
-<!--
-**VincentGagnonDev/VincentGagnonDev** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+  private List<string> mSkills = new List<string>();
+  private string mName;
+  private int mAge;
 
-Here are some ideas to get you started:
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+  public string Skills {
+    get { return mSkills; }
+    set { mSkills = value; }
+  }
+
+  public List<string> Name {
+    get { return mName; }
+    set { mName = value; }
+  }
+
+  public int Age {
+    get { return mAge; }
+    set { mAge = value; }
+  }
+
+  public Vincent() {
+    Skills = string["Python", "C#", ".Net", "Move"];
+    Name = "Vincent Gagnon";
+    Age = 18;
+  }
+}
